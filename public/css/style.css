@@ -1,5 +1,6 @@
 
 
+
 .main {
     height:100vh;
     width: 100%;
@@ -11,12 +12,14 @@
     position: relative;
 }
 
-.title {
+
+* {
   font-family: 'Russo One', sans-serif;
 }
 
-.user-info-box {
-  margin-right: ;
+li {
+  font-size: 20px;
+  list-style: none;
 }
 
 #logo {
@@ -28,8 +31,13 @@
 }
 
 .new-message {
+  float: right;
   /*background-color: red;*/
-  border: thin grey solid;
+  box-sizing: border-box;
+  border: thick grey solid;
+  /*max-width: 90%;*/
+  height: 300px;
+  padding-left: 15px;
   /*margin: 0 100px 0 100px;*/
 }
 
@@ -37,12 +45,15 @@
   background-color: lavender;
   border: thin grey solid;
   padding-left: 15px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
+
 }
 
-.user-info-box {
+.side-window {
   /*background-color: lightgrey;*/
   border: thin grey solid;
-  max-width: 100%;
-  height: 300px;
+  box-sizing: border-box;
+  /*margin: 10px;*/
+  width: 100%;
+  height: 200px;
 }
