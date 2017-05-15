@@ -1,0 +1,48 @@
+
+
+.main {
+    height:100vh;
+    width: 100%;
+    background: url('../images/jugg.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+}
+
+.title {
+  font-family: 'Russo One', sans-serif;
+}
+
+.user-info-box {
+  margin-right: ;
+}
+
+#logo {
+  float: left;
+  margin: 25px 20px 0 0;
+  height: 60px;
+  width: 70px;
+
+}
+
+.new-message {
+  /*background-color: red;*/
+  border: thin grey solid;
+  /*margin: 0 100px 0 100px;*/
+}
+
+.post-box {
+  background-color: lavender;
+  border: thin grey solid;
+  padding-left: 15px;
+  margin-bottom: 15px;
+}
+
+.user-info-box {
+  /*background-color: lightgrey;*/
+  border: thin grey solid;
+  max-width: 100%;
+  height: 300px;
+}

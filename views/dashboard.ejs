@@ -1,0 +1,95 @@
+ <%- include('./partials/header.ejs') %>
+
+
+
+  <h1> Dashboard </h1>
+
+
+
+
+
+
+
+
+
+
+  <div class="container">
+    <div class="row">
+      <%# <div class="col-lg-8">%>
+
+      <div class="container">
+        <div class="row">
+          <div class="user-info-box col-lg-4 col-md-3">
+            <img id="logo" src="../images/bird.png">
+            <div id="user-info">
+            <h2><%= list[list.length-1].name %></h2>
+            <p>@<%= list[list.length-1].name %>.com</p>
+          </div>
+          </div>
+
+        <div class="new-message col-lg-8">
+          <form action="/" method="post" class="container">
+            <div class="form-group">
+              <label for="user">Username:</label>
+              <input type="text" class="form-control" name="userName">
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message:</label>
+              <textarea class="form-control" rows="5" name="message" maxlength="255"></textarea>
+            </div>
+
+            <div id="submit-button">
+              <button type="submit" class="btn pull-right">Basic</button>
+
+            </div>
+          </form>
+        </div>
+      <%# </div>%>
+    </div>
+  </div>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="user-info-box col-lg-4 col-md-3">
+        <img id="logo" src="../images/bird.png">
+        <div id="user-info">
+        <h2><%= list[list.length-1].name %></h2>
+        <p>@<%= list[list.length-1].name %>.com</p>
+      </div>
+      </div>
+
+      <div class="col-sm-12 col-md-9 col-lg-8">
+        <% for (let element of list) { %>
+          <div class="post-box">
+          <h4><%= element.name %></h4>
+          <p><%= element.message %></p>
+          <br>
+          </div>
+        <% }%>
+      </div>
+    </div>
+
+  <div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
