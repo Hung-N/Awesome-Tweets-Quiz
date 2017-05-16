@@ -5,6 +5,12 @@
   "main": "app.js",
   "author": "Hung",
   "license": "MIT",
+  "scripts": {
+    "db:create" : "createdb --echo crap",
+    "db:drop" : "dropdb --echo crap",
+    "db:migrate" : "node ./db/migrate.js",
+    "db:setup" : "yarn db:drop && yarn db:create && yarn db:migrate"
+  },
   "dependencies": {
     "body-parser": "^1.17.1",
     "cookie-parser": "^1.4.3",
