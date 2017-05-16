@@ -1,19 +1,32 @@
 
+* {
+  border-radius: 5px;
+  margin: 0;
+  font-family: 'Russo One', sans-serif;
+}
+
 .main {
     height:100vh;
     width: 100%;
-    background: url('../images/jugg.jpg') no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+    background: url('../images/home2.jpg') no-repeat center center;
+    /*-webkit-background-size: cover;*/
+    /*-moz-background-size: cover;*/
+    /*-o-background-size: cover;*/
     background-size: cover;
-    position: relative;
+    /*position: absolute;*/
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
+.navbar {
+  padding-bottom: 15px;
+}
 
-
-* {
-  font-family: 'Russo One', sans-serif;
+.title {
+  color: lightgray;
+  font-size: 70px;
+  opacity: 60%;
 }
 
 li {
@@ -29,6 +42,10 @@ li {
 
 #logo {
   float: left;
+  /*border-style: solid;*/
+  background-color: white;
+  border: thin grey solid;
+  padding: 10px 10px 10px 10px;
   margin: 15px 20px 0 0;
   height: 60px;
   width: 70px;
@@ -54,6 +71,11 @@ li {
   margin-bottom: 10px;
 }
 
+.dashboard {
+  /*background-color: skyblue;*/
+  position: relative;
+  margin-top: 110px;
+}
 .side-window {
   /*background-color: lightgrey;*/
   border: thin grey solid;

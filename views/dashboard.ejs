@@ -4,20 +4,20 @@
 
 
 
-
-
-
+<div class="dashboard">
   <div class="container">
     <div class="row">
 
       <div class="side-window hidden-xs col-sm-4 col-md-4 col-lg-4">
         <img id="logo" src="../images/bird.png">
           <div id="user-info">
-            <h2><%= tweets[0].name %></h2>
+            <% if (tweets.length > 0) { %>
+              <h2><%= tweets[0].name %></h2>
+            <% } %>
             <p>@uglyTweets.com</p>
             <hr>
-            <h3>Messages</h3>
-            <h3><%= tweets.length %></h3>
+            <h4>Messages</h4>
+            <h3> <%= tweets.length %></h3>
           </div>
       </div>
 
@@ -55,6 +55,7 @@
       </div>
 
       <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 col-xl-8">
+        <%# <h3> New Tweets </h3>%>
         <% for (let tweet of tweets) { %>
           <div class="post-box">
             <img id="logo" src="../images/bird.png"></img>
@@ -66,6 +67,7 @@
       </div>
     </div>
   <div>
+</div>
 
   </body>
 </html>
