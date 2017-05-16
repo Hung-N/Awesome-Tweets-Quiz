@@ -1,6 +1,4 @@
 
-
-
 .main {
     height:100vh;
     width: 100%;
@@ -13,31 +11,39 @@
 }
 
 
+
 * {
   font-family: 'Russo One', sans-serif;
 }
 
 li {
-  font-size: 20px;
+  font-size: 18px;
   list-style: none;
 }
 
-#logo {
-  float: left;
-  margin: 25px 20px 0 0;
-  height: 60px;
-  width: 70px;
-
+.trending-tweets {
+  margin: 0;
+  padding-left: 0
 }
 
+
+#logo {
+  float: left;
+  margin: 15px 20px 0 0;
+  height: 60px;
+  width: 70px;
+}
+
+#submit-button {
+  padding-top: 15px;
+}
 .new-message {
-  float: right;
-  /*background-color: red;*/
+  /*float: right;*/
   box-sizing: border-box;
-  border: thick grey solid;
+  border: thin   grey solid;
   /*max-width: 90%;*/
   height: 300px;
-  padding-left: 15px;
+  padding: 10px 0 10px 0;
   /*margin: 0 100px 0 100px;*/
 }
 
@@ -46,7 +52,6 @@ li {
   border: thin grey solid;
   padding-left: 15px;
   margin-bottom: 10px;
-
 }
 
 .side-window {
