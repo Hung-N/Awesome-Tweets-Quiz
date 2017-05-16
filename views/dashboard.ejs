@@ -7,34 +7,27 @@
 
 
 
-      <div class="container">
-        <div class="row">
+  <div class="container">
+    <div class="row">
 
-          <div class="side-window hidden-xs col-sm-4 col-md-4 col-lg-4">
-            <img id="logo" src="../images/bird.png">
-            <div id="user-info">
-              <h2><%= tweets[tweets.length-1].name %></h2>
-              <p>@uglyTweets.com</p>
-              <hr>
-            </div>
+      <div class="side-window hidden-xs col-sm-4 col-md-4 col-lg-4">
+        <img id="logo" src="../images/bird.png">
+          <div id="user-info">
+            <h2><%= tweets[0].name %></h2>
+            <p>@uglyTweets.com</p>
+            <hr>
+            <h3>Messages</h3>
+            <h3><%= tweets.length %></h3>
           </div>
-
-
-
+      </div>
 
       <div class="container">
         <div class="new-message col-xs-12 col-sm-8 col-md-8 col-lg-8 pull-right">
           <form action="/" method="post" class="">
-            <%# <div class="form-group">%>
-              <label for="user">Username:</label>
-              <input type="text" class="form-control" name="userName">
-            <%# </div>%>
-
-            <%# <div class="form-group">%>
-              <label for="message">Message:</label>
-              <textarea class="form-control" rows="5" name="message" maxlength="144"></textarea>
-            <%# </div>%>
-
+            <label for="user">Username:</label>
+            <input type="text" class="form-control" name="userName">
+            <label for="message">Message:</label>
+            <textarea class="form-control" rows="5" name="message" maxlength="144"></textarea>
             <div id="submit-button">
               <button type="submit" class="btn btn-primary pull-right">submit</button>
             </div>
@@ -42,31 +35,22 @@
         </div>
       </div>
 
-  <br>
-  <br>
-
+      <br>
+      <br>
 
   <div class="container">
     <div class="row">
-
       <div class="hidden-xs hidden-sm">
         <h3>Trending Tweets</h3>
       </div>
 
-
-
       <div class="side-window hidden-xs col-sm-4 col-md-4 col-lg-4 col-xl-4">
-
-
         <div class="trending-tweets">
-
             <li><a href="">#thisWebsiteSucks</a></li>
             <li><a href="">#learnHowToCode</a></li>
             <li><a href="">#facebookTips</a></li>
             <li><a href="">#latestGarbage</a></li>
             <li><a href="">#iCantDesignShit</a></li>
-
-
         </div>
       </div>
 
@@ -81,20 +65,7 @@
         <% } %>
       </div>
     </div>
-
   <div>
-
-
-
-
-
-
-
-
-
-
-
-
 
   </body>
 </html>
