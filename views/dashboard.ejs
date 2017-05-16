@@ -13,7 +13,7 @@
           <div class="side-window hidden-xs col-sm-4 col-md-4 col-lg-4">
             <img id="logo" src="../images/bird.png">
             <div id="user-info">
-              <h2><%= list[list.length-1].name %></h2>
+              <h2><%= tweets[tweets.length-1].name %></h2>
               <p>@uglyTweets.com</p>
               <hr>
             </div>
@@ -71,11 +71,11 @@
       </div>
 
       <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 col-xl-8">
-        <% for (let element of list) { %>
+        <% for (let tweet of tweets) { %>
           <div class="post-box">
             <img id="logo" src="../images/bird.png"></img>
-            <h4><%= element.name %></h4>
-            <p><%= element.message %></p>
+            <h4><%= tweet.name %></h4>
+            <p><%= tweet.message %></p>
             <br>
           </div>
         <% } %>

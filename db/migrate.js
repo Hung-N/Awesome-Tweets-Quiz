@@ -4,7 +4,7 @@ db.query(`
   CREATE TABLE tweets (
     id SERIAL,
     name VARCHAR(25),
-    messag VARCHAR(144)
+    message VARCHAR(144)
   )
 `)
   .then(() => {
